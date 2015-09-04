@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n=6,count=2,h;
+    for(i=1;i<=(2*n-1);i++)
+    {
+        if(i<=n)
+        {
+       for(j=i;j>0;j--)
+       {
+           printf("%d",i);
+       }
+       printf("\n");
+        }
+        else
+        { 
+           
+            for(h=i-count;h>0;h--)
+            {
+                printf("%d",i-count);
+            }
+            count+=2;
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
